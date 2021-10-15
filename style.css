@@ -1,0 +1,208 @@
+body{
+  display:grid;
+  grid-template: 
+  "side header aside" 70px 
+  "side main aside" 3000px
+  "footer footer footer"  200px
+  /13.2% auto 8px;
+
+}
+
+header{
+  /* background-color: azure; */
+  grid-area: header;
+}
+
+aside{
+  grid-area: aside;
+}
+
+.menu{
+  text-align: right;
+}
+
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  padding:22px;
+}
+
+.menu a{
+  font-family: inherit;
+  font-weight: 700;
+}
+
+
+.view-cart{
+  background-color: #14A2B8;
+  /* height:110px; */
+}
+
+.view-cart a{
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.side-menu{
+  grid-area: side;
+  background-color:#14A2B8;
+  text-align: center;
+}
+
+.side-menu a{
+  /* background-color:#ffffff; */
+  color:#ffffff
+}
+
+.category{
+  /* background-color:#ffffff; */
+  padding-top:20px;
+  padding-bottom:20px;
+  font-size: 20px;
+}
+
+.side-logo{
+  background-color: #ffffff;
+  size:auto;
+  margin-top:10px strong;
+  margin-bottom:15px;
+  padding:15px;
+  padding-bottom:25px;
+}
+
+.side-font{
+  font-size:2.5em;
+  padding-bottom:8px;
+}
+
+main{
+  /* background-color: antiquewhite; */
+  grid-area: main;
+  padding-left:10px;
+}
+
+.item-list{
+  display:grid;
+  grid-template: 
+  "item1 item2 item2" 31%
+  "item3 item3 item4" 31%
+  "item5 item6 item4" 31%
+   /1fr 1fr 1fr;
+   grid-gap:20px;
+   margin-top:10px; 
+}
+
+.item{
+  border: 0.1px solid gainsboro;
+  border-radius:5px;
+}
+
+.item-detail{
+  padding:15px;
+  height:300px;
+}
+
+.item-detail p{
+  margin-bottom:20px;
+}
+
+.item h3{
+  font-size:28px;
+  font-family:inherit;
+  font-weight:800;
+  margin-top:20px;
+}
+
+.item h4{
+  font-size: 20px;
+  font-family:inherit;
+  font-weight:800;
+}
+
+.item-price{
+  margin-top:12px;
+  margin-bottom:10px;
+}
+
+.item h6{
+  font-size:13px;
+}
+.portrait img{
+  width:100%;
+}
+
+.item-price{
+  display:flex;
+  align-items:baseline;
+}
+
+.item-bottom{
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.landscape{
+  display:flex;
+}
+
+.landscape img{
+  width:50%;
+  height:auto;
+}
+.like-comment{
+  display:flex;
+}
+
+.item-like,.item-comment{
+  display:flex;
+  margin-left:15px;
+  align-items: center;
+}
+
+
+.item-more{
+  background-color:#28A745;
+  padding:10px;
+  border-radius: 3px;
+  color:#ffffff;
+  /* float:left; */
+}
+
+.item1{
+  grid-area:item1;
+  background-color: #ffffff;
+}
+
+.item2{
+  grid-area:item2;
+  background-color: #ffffff;
+}
+
+.item3{
+  grid-area:item3;
+  background-color: #ffffff;
+}
+.item4{
+  grid-area:item4;
+  background-color: #ffffff;
+}
+.item5{
+  grid-area:item5;
+  background-color: #ffffff;
+}
+.item6{
+  grid-area:item6;
+  background-color: #ffffff;
+}
+
+
+
+footer{
+  background-color: cornflowerblue;
+  grid-area: footer;
+}
+
+
